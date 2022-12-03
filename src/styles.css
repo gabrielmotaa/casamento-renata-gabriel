@@ -1,0 +1,316 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+a:visited {
+  color: inherit;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.couple-logo {
+  color: inherit;
+  font-size: 1.4em;
+}
+
+nav>div {
+  padding: 1em;
+  font-size: 1.25rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav .links {
+  margin: auto 0;
+}
+
+nav .links a {
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  margin-left: 1em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.nav-moving {
+  color: rgb(8, 30, 6);
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  z-index: 2;
+}
+
+nav .links a:hover {
+  border-bottom: 2px solid #ddd;
+}
+
+nav.nav-moving .links a:hover {
+  border-bottom: 2px solid rgb(8, 30, 6);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  transition: all .5s ease-out;
+  color: white;
+}
+
+footer {
+  padding: 1em 0;
+  text-align: center;
+  background-color: rgb(8, 30, 6);
+  color: white;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+
+.hero-image {
+  background-image: url('../assets/renata-e-gabriel-filter.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15em;
+  color: white;
+  align-items: center;
+}
+
+.hero h1 {
+  font-family: 'Gwendolyn', cursive;
+  color: white;
+  font-size: 7em;
+  font-weight: 400;
+}
+
+.countdown-section {
+  padding: 5em 0;
+  color: rgb(8, 30, 6);
+}
+
+.countdown-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+
+.countdown-timer {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  column-gap: 2em;
+}
+
+.timer-box {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1em;
+}
+
+.timer-box>.value {
+  padding: 1em;
+  font-size: 2em;
+  font-size: 500;
+}
+
+#nossa-historia {
+  padding: 5em 0;
+  background-color: rgb(8, 30, 6);
+  color: white;
+  text-align: center;
+  line-height: 2em;
+  font-size: 1em;
+}
+
+#nossa-historia p {
+  text-align: justify;
+  font-size: 1.25em;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+#local {
+  padding: 5em 0;
+  background-color: white;
+}
+
+#local>div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#local h2 {
+  color: rgb(8, 30, 6);
+}
+
+iframe {
+  min-height: 450px;
+  border: none;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.local-info {
+  color: rgb(8, 30, 6);
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+.local-info p {
+  margin-bottom: 1em;
+}
+
+.photos {
+  position: relative;
+}
+
+.photos .slider {
+  display: flex;
+  height: 50vh;
+  overflow: auto;
+  cursor: grab;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.photos .slider::-webkit-scrollbar {
+  display: none;
+}
+
+
+.photos::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  height: 100%;
+  width: 2em;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .4));
+}
+
+.photos::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  color: white;
+  height: 100%;
+  width: 2em;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .4));
+}
+
+.photos .slider img {
+  max-width: 30%;
+  object-fit: cover;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .couple-logo {
+    font-size: 1em;
+    align-self: center;
+  }
+
+  .mobile-menu {
+    display: flex;
+    width: 1.4em;
+    cursor: pointer;
+    justify-content: center;
+  }
+
+  nav.active .mobile-menu {
+    outline: 2px solid rgb(8, 30, 6);
+  }
+
+  .menu {
+    display: flex;
+    padding: 0 .5em;
+    justify-content: space-between;
+  }
+
+  nav>div {
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav .links a {
+    margin: 1em 0;
+    text-align: center;
+    display: none;
+  }
+
+  nav.active .links a {
+    display: block;
+    padding: .5em 0;
+  }
+
+  nav.nav-moving .links a:hover {
+    border-bottom: none;
+    background-color: #ddd;
+  }
+
+  .hero h1 {
+    font-size: 3.5em;
+  }
+
+  .countdown-section {
+    padding: 3em 0;
+  }
+
+  #nossa-historia {
+    padding: 3em 0;
+  }
+
+  #nossa-historia div p {
+    padding: 0 1em;
+  }
+
+  .photos .slider img {
+    max-width: 80%;
+  }
+
+  #local {
+    padding: 3em 0;
+  }
+}
