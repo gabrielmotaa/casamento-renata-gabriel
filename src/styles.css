@@ -306,6 +306,10 @@ iframe {
     padding: 0 1em;
   }
 
+  #nossa-historia p {
+    font-size: 1em;
+  }
+
   .photos .slider img {
     max-width: 80%;
   }
