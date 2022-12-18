@@ -295,6 +295,10 @@ iframe {
     background-color: #ddd;
   }
 
+  .hero-image {
+    background-image: url('../assets/renata-e-gabriel-filter-mobile.jpg');
+  }
+
   .hero h1 {
     font-size: 3.5em;
   }
