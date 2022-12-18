@@ -52,7 +52,7 @@ nav .links a {
 }
 
 .nav-moving {
-  color: rgb(8, 30, 6);
+  color: rgb(73, 109, 152);
   background-color: white;
   border-bottom: 1px solid #ddd;
   z-index: 2;
@@ -63,7 +63,7 @@ nav .links a:hover {
 }
 
 nav.nav-moving .links a:hover {
-  border-bottom: 2px solid rgb(8, 30, 6);
+  border-bottom: 2px solid rgb(73, 109, 152);
 }
 
 .container {
@@ -81,7 +81,7 @@ nav {
 footer {
   padding: 1em 0;
   text-align: center;
-  background-color: rgb(8, 30, 6);
+  background-color: rgb(73, 109, 152);
   color: white;
 }
 
@@ -91,7 +91,7 @@ footer a {
 
 
 .hero-image {
-  background-image: url('../assets/renata-e-gabriel-filter.jpeg');
+  background-image: url('../assets/renata-e-gabriel-filter.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -116,9 +116,14 @@ footer a {
   font-weight: 400;
 }
 
+  
+.hero p {
+  font-size: 2em;
+}
+
 .countdown-section {
   padding: 5em 0;
-  color: rgb(8, 30, 6);
+  color: rgb(73, 109, 152);
 }
 
 .countdown-title {
@@ -149,7 +154,7 @@ footer a {
 
 #nossa-historia {
   padding: 5em 0;
-  background-color: rgb(8, 30, 6);
+  background-color: rgb(73, 109, 152);
   color: white;
   text-align: center;
   line-height: 2em;
@@ -179,7 +184,7 @@ h2 {
 }
 
 #local h2 {
-  color: rgb(8, 30, 6);
+  color: rgb(73, 109, 152);
 }
 
 iframe {
@@ -189,7 +194,7 @@ iframe {
 }
 
 .local-info {
-  color: rgb(8, 30, 6);
+  color: rgb(73, 109, 152);
   font-size: 1.25em;
   margin-bottom: 1em;
 }
@@ -259,7 +264,7 @@ iframe {
   }
 
   nav.active .mobile-menu {
-    outline: 2px solid rgb(8, 30, 6);
+    outline: 2px solid rgb(73, 109, 152);
   }
 
   .menu {
