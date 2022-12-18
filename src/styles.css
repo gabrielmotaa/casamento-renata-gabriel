@@ -109,13 +109,18 @@ footer a {
   align-items: center;
 }
 
+.hero.pre-wedding {
+  background-color: rgb(73, 109, 152);
+  padding-top: 8em;
+  padding-bottom: 5em;
+}
+
 .hero h1 {
   font-family: 'Gwendolyn', cursive;
   color: white;
   font-size: 7em;
   font-weight: 400;
 }
-
   
 .hero p {
   font-size: 2em;
@@ -250,6 +255,20 @@ iframe {
   display: none;
 }
 
+#pre-wedding-photos {
+  padding: 3em 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#pre-wedding-photos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 500px;
+}
+
 @media screen and (max-width: 576px) {
   .couple-logo {
     font-size: 1em;
@@ -299,6 +318,11 @@ iframe {
     background-image: url('../assets/renata-e-gabriel-filter-mobile.jpg');
   }
 
+  .hero.pre-wedding {
+    padding-top: 5em;
+    padding-bottom: 3em;
+  }
+
   .hero h1 {
     font-size: 3.5em;
   }
@@ -329,5 +353,12 @@ iframe {
 
   #local {
     padding: 3em 0;
+  }
+
+  #pre-wedding-photos {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
