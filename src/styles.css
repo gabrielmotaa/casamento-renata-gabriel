@@ -385,7 +385,13 @@ iframe.maps {
     gap: 10px;
   }
 
-  .gifts {
-    grid-template-columns: 1fr;
+  .gifts-section div p {
+    padding: 0 1em;
   }
+
+  .physical-gifts div p {
+    padding: 0 1em;
+  }
+
+
 }
