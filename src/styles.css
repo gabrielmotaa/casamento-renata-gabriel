@@ -195,7 +195,11 @@ h2 {
 iframe {
   min-height: 450px;
   border: none;
+}
+
+iframe.maps {
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
 }
 
 .local-info {
@@ -253,6 +257,25 @@ iframe {
 
 .mobile-menu {
   display: none;
+}
+
+.gifts-section {
+  padding: 4em 0;
+}
+
+.gifts-section p {
+  line-height: 2em;
+  font-size: 1em;
+}
+
+.gifts-section img {
+  padding: 1em 0;
+}
+
+.physical-gifts p {
+  line-height: 2em;
+  font-size: 1em;
+  padding-bottom: 1em;
 }
 
 #pre-wedding-photos {
@@ -360,5 +383,9 @@ iframe {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .gifts {
+    grid-template-columns: 1fr;
   }
 }

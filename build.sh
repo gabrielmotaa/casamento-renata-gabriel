@@ -11,6 +11,7 @@ mkdir -p dist
 
 minify src/index.html > index.html
 minify src/pre-wedding.html > pre-wedding.html
+minify src/presentes.html > presentes.html
 minify src/script.js > script.js
 minify src/styles.css > styles.css
 

@@ -94,3 +94,19 @@ menu.addEventListener('click', () => {
     navbar.classList.remove('nav-moving');
   }
 })
+
+// modal
+const giftBoxes = document.querySelectorAll('.gifts div');
+const modal = document.querySelector('dialog');
+const closeButton = document.querySelector('dialog button');
+
+function modalClick() {
+  modal.showModal();
+}
+
+function modalClose() {
+  modal.close();
+}
+
+giftBoxes.forEach(giftBox => giftBox.addEventListener('click', modalClick));
+closeButton.addEventListener('click', modalClose);
