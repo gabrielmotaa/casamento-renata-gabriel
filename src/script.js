@@ -39,7 +39,7 @@ function updateCountdown() {
   daysBox.querySelector('.value').innerText = days;
   daysBox.querySelector('p').innerText = days > 1 ? 'dias' : 'dia';
 
-  const hours = remaningHours % 60;
+  const hours = remaningHours % 24;
   hoursBox.querySelector('.value').innerText = hours;
   hoursBox.querySelector('p').innerText = hours > 1 ? 'horas' : 'hora';
 
